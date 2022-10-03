@@ -4,43 +4,57 @@
 <head>
     <title>CSS Basic </title>
     <style>
-       
-        /* h4,p{
-            color: rgb(242, 116, 12);
-        } */
-
-        .personal{
-            color: rgb(176, 98, 98);
+        .box1 {
+            border: 2px solid cadetblue;
+            background: cadetblue;
+            width: 150px;
+            height: 150px;
+            display: inline-block;
+            position: static;
         }
 
-        .company{
-            color: red;
+        .box2 {
+            border: 5px solid rgb(32, 33, 33);
+            background: rgb(174, 115, 151);
+            width: 150px;
+            height: 150px;
+            display: inline-block;
+            position: absolute;
+            top: 70px;
+            z-index: -1;
+            
+
         }
-        #address {
-           background-color: blueviolet;
-           color: rgb(135, 222, 152); 
+
+        .box3 {
+            border: 5px solid rgb(186, 35, 95);
+            background:rgb(186, 35, 95);
+            width: 150px;
+            height: 150px;
+            display: inline-block;
+            position: static;
+            top: 50px;
+            left: 60px;
+        
         }
-        #name{
-            color: white;
-            background-color: #34495e;
-        }
-        /* *{
-           color: brown; 
-           background-color: aqua;
-        } */
     </style>
 </head>
 
 <body>
-    <h3> My name is <span id="name">Mohit Sharma </span>   </h3>
-    <p class="personal"> I am Engineering Graduates</p>
-    <h3 class="company"> Currently working TCS </h3>
-
-    <h4 id="address"> Address: PUNE</h4>
-
-    <h3 class="personal"> My father is farmer </h3>
+    <div class="container">
+        <div class="box1">
+            <h3>This is box-1 </h3> 
+        </div>
     
-    <h3 class="personal"> I am married </h3>
+        <div class="box2">
+            <h3>This is box-2 </h3> 
+        </div>
+    
+        <div class="box3">
+            <h3>This is box-3 </h3> 
+        </div>
+    </div>
 
 </body>
+
 </html>

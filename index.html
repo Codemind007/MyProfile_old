@@ -21,10 +21,29 @@
             font-family: 'Sofia', cursive;
         }
 
+        #nav_bar a {
+            margin-right: 40px; 
+            text-shadow: 4px 2px 5px #2c3e50;
+        }
+        #nav_bar a:hover{
+            text-shadow: 4px 2px 5px #c91322;
+        }
+
         .header_section {
             text-align: right;
-           
             color: #2c3e50;
+           position: fixed;
+            right: 20px;
+        }
+
+        footer div .follow_me {
+            margin-right: 40px;
+        }
+
+        footer div #follow-me-label{
+            font-size: large;
+            font-weight: bold;
+            margin-right: 50px;
         }
     </style>
 </head>
@@ -32,41 +51,44 @@
 <body>
     <header>
         <div class="header_section">
-            &nbsp;&nbsp;
-            <strong>
-                <i class="fa fa-user fa-lg" aria-hidden="true"></i> &nbsp; Mohit Sharma &nbsp;&nbsp; &nbsp;&nbsp;
-                <i class="fa fa-phone-square fa-lg" aria-hidden="true"></i> &nbsp; 8600 5550 99 &nbsp;&nbsp;
-                &nbsp;&nbsp;
-                <i class="fa fa-envelope fa-lg" aria-hidden="true"></i> &nbsp; mohit.sharma@gmail.com &nbsp;&nbsp;
-                &nbsp;&nbsp;
-            </strong>
+            <span> <i class="fa fa-user fa-lg" aria-hidden="true"></i> Mohit Sharma</span>
+            <i class="fa fa-phone-square fa-lg" aria-hidden="true"></i> 8600 5550 99
+            <i class="fa fa-envelope fa-lg" aria-hidden="true"></i> mohit.sharma@gmail.com
         </div>
     </header>
     <br>
     <nav id="nav_bar">
-        <a href="home.html" target="myFrame">home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="tech_stack.html" target="myFrame">tech Stack</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="education.html" target="myFrame">Education</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="project.html" target="myFrame">Project</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="hobbies.html" target="myFrame">Hobbies</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="personalDetails.html" target="myFrame">Personal</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="home.html" target="myFrame">home</a>
+        <a href="tech_stack.html" target="myFrame">tech Stack</a>
+        <a href="education.html" target="myFrame">Education</a>
+        <a href="project.html" target="myFrame">Project</a>
+        <a href="hobbies.html" target="myFrame">Hobbies</a>
+        <a href="personalDetails.html" target="myFrame">Personal</a>
         <a href="others.html" target="myFrame">Others</a>
     </nav>
     <br>
-    <iframe width="900" height="570px" name="myFrame" src="home.html">
+    <iframe width="900" height="900px" name="myFrame" src="home.html">
 
     </iframe>
     <br> <br>
     <footer>
         <div>
-            &nbsp;&nbsp;
-            <big> <strong>Follow me </strong> </big> &nbsp; &nbsp; &nbsp;
-            <a href="#"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a> &nbsp;&nbsp; &nbsp;&nbsp;
-            <a href="#"><i class="fa fa-google fa-lg" aria-hidden="true"></i></a> &nbsp;&nbsp; &nbsp;&nbsp;
-            <a href="#"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a> &nbsp;&nbsp; &nbsp;&nbsp;
-            <a href="#"><i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i> </a>
+            <span id="follow-me-label"> Follow me</span> 
+            <span class="follow_me">
+                <a href="#"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a>
+            </span>
+            <span class="follow_me">
+                <a href="#"><i class="fa fa-google fa-lg" aria-hidden="true"></i></a>
+            </span>
+            <span class="follow_me">
+                <a href="#"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+            </span>
+            <span class="follow_me">
+                <a href="#"><i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i> </a>
+            </span>
+
         </div>
     </footer>
-</body>
 
+</body>
 </html>
